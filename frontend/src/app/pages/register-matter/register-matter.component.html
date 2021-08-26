@@ -1,0 +1,32 @@
+<section class="bgComponent">
+    <div class="form">
+      <mat-card class="card">
+        <mat-card-header>
+          <h1>Registro de Materia</h1>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="container-fluid">
+            <div class="container">
+  
+              <mat-form-field appearance="fill">
+                <mat-label>Nombre</mat-label>
+                <input [(ngModel)]="materia.nombre" matInput type="text" required/>
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Docente</mat-label>
+                <input [(ngModel)]="materia.docente" matInput type="text" required/>
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Institucion</mat-label>
+                <input [(ngModel)]="materia.institucion" matInput type="text" required/>
+              </mat-form-field>
+  
+            </div>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button class ="text" mat-raised-button (click)="registrar()">Registrar</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </section>
